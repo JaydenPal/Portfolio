@@ -63,10 +63,30 @@ nav > p > a {
     margin-top: 10px;
     text-decoration: none;
 }
-.projects > li {
-    margin: 20px auto;
+
+.project-content {
+    display: flex;
+    flex-flow: row;
+    justify-content:space-between;
+}
+
+.project-links {
+    width: fit-content;
     list-style-type: none;
 }
+
+.project-links > li {
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.projects {
+    display: flex;
+    flex-flow: column;
+}
+
 img{
     height: 50%;
     width: 30%;
@@ -94,15 +114,22 @@ img{
     color: black;
 }
 
-.projects > li >[href] {
+.project-links > li >[href] {
     color:cornflowerblue;
 }
 
-.projects > li > [href]:hover {
+.project-links > li > [href]:hover {
     text-decoration: none;
     color: rgb(0, 110, 64);
 }
 
+.skill {
+    align-content: center;
+}
+
+.fa-brands {
+    width: fit-content;
+}
 #linkedin {
     margin-right: 20px;
 }
