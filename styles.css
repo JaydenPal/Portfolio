@@ -7,6 +7,11 @@
 p {
     font-weight: 400;
 }
+
+h1 {
+    text-wrap: nowrap;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -34,7 +39,8 @@ nav > p {
 
 nav > p > a {
     text-decoration: none;
-    text-wrap: nowrap;
+    white-space: nowrap;
+    overflow: visible;
     color: black;
 }
 
@@ -160,15 +166,44 @@ img{
         align-items: center;
     }
 
-    .project-content {
+    .project-content, header, .social-contact-container {
         display: flex;
         flex-flow: column;
         justify-content:space-between;
+        align-items: center;
     }
 
-    #about-nav {
+    #top-link-2 {
+        margin-top:0;
+    }
+
+    .social-icons {
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.918)
+    }
+
+    /* #about-nav {
         visibility: hidden;
         display: none;
+    } */
+
+    h2, p, .project-links > li {
+        text-align: center;
+    }
+
+    .main {
+        margin-top: 5rem;
+    }
+
+    h1, nav > p > a {
+        color: rgb(255, 255, 255);
     }
 }
 
