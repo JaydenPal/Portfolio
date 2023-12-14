@@ -198,6 +198,10 @@ img{
         text-align: center;
     }
 
+    .about-me-text > p {
+        text-align: left;
+    }
+
     .main {
         margin-top: 5rem;
     }
